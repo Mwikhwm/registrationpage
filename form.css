@@ -1,0 +1,142 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    /*background-color: #b9bfd4;
+    background:linear-gradient(to right,#7a9cec,#cfcfde);*/
+    background-image: url(images/cyberpunk.jpg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+}
+
+
+.container{
+    background: rgb(211, 209, 209);
+    width:500px;
+    padding:25px;
+    margin:50px auto 0;
+    border-top: 5px solid blue;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgb(0,0 ,0,0.5);
+}
+.container h1{
+    font-size: 24px;
+    padding-bottom:30px;
+    text-align:center;
+}
+.container-1{
+    
+    width:90%;
+    position:relative;
+    margin:20px auto;
+   
+    
+}
+.text-name {
+    width:100%;
+    padding:8px 0 8px 40px;
+}
+
+
+.container-1  i
+{
+    position:absolute;
+    font-size: 18px;
+    padding:8px;
+    color:rgba(12, 136, 230, 0.897);
+    border-right: 1px solid #ebe2e2;
+    
+} 
+.container-1 input{
+    border-radius: 5%;
+    
+    color:#c7abb0;
+}
+.text-name:hover,.name:hover {
+    background-color:rgb(253, 252, 252);
+    
+
+}
+.text-name:focus,.name:focus
+{
+    border: 3px solid red;
+}
+.button
+{
+ background-color:rgb(23, 23, 224);
+   height: 35px;
+  color:aliceblue;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size:20px;
+  cursor:pointer;
+  margin-bottom:10px;
+
+}
+.button:hover{
+    background:rgb(120, 173, 199);
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding: 0 6rem;
+    margin-top:0.11rem;
+    font-weight:bold;
+}
+button{
+    color:rgb(125,125,235);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+button:hover{
+    text-decoration: underline;
+    color:green;
+}
+.icons{
+    text-align:center;
+   
+}
+.icons i{
+    padding:0.8rem 1.5rem;
+    border-radius:1.5rem;
+    cursor:pointer;
+    border:2px solid #526ed1;
+    margin:20px;
+    transition:1s;
+    box-shadow:0 20px 35px rgb(0,0 ,0,0.5);
+}
+@media (max-width:480px)
+
+{
+    .container{
+        width:100%;
+        padding:5px;
+
+    }
+    .container-1
+    {
+        margin-bottom: -10px;
+    }
+    .name
+    {
+        width:100%;
+        padding:8px 0 8px 40px;
+        margin-bottom: 10px;
+    }
+    .container
+    {
+        width: 100%;
+    }
+}

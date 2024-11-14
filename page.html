@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container" id="signUp" style="display:none">
+        <div class="slider"></div>
+        <form action="page.php" method="post">
+            <h1>REGISTRATION FORM</h1>
+
+            <div class="container-1">
+                <i class="fa fa-user lock" aria-hidden="true"></i>
+                <input type="text" size="40" name="name" placeholder="Name" class="text-name" required/>
+            </div>
+
+            <div class="container-1">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="e-mail" class="text-name" required/>
+            </div>
+
+            <div class="container-1">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="password" placeholder="password" class="text-name" required/>
+            </div>
+
+            <div class="container-1">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="confirm_password" placeholder="confirm password" class="text-name" required/>
+            </div>
+
+            <div class="container-1">
+                <select class="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="South Korea">South Korea</option>
+                </select>
+            </div>
+
+            <div class="container-1" id="SignIn">
+                <input type="checkbox" name="terms" required class="checkbutton"/>
+                <label for="terms"> I accept terms and condition.</label>
+            </div>
+
+            <div class="container-1">
+                <input type="submit" value="Sign Up" name="signUp" class="button"/>
+            </div>
+
+            <p class="or">------or-----</p>
+
+            <div class="icons">
+                <i class="fa fa-google"></i>
+                <i class="fa fa-facebook"></i>
+            </div>
+
+            <div class="links">
+                <p>Already have an account?</p>
+                <button type="button" id="signInButton">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="signIn">
+        <form action="page.php" method="post">
+            <h1>Log In</h1>
+
+            <div class="container-1">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="email" name="email" placeholder="Email" required class="text-name"/>
+            </div>
+
+            <div class="container-1">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="password" placeholder="Password" required class="text-name"/>
+            </div>
+
+            <div class="container-1">
+                <input type="submit" value="Sign In" name="signIn" class="button"/>
+            </div>
+        </form>
+        
+
+        <p class="or">------or-----</p>
+
+        <div class="icons">
+            <i class="fa fa-google"></i>
+            <i class="fa fa-facebook"></i>
+        </div>
+
+        <div class="links">
+            <p>Don't have an account yet?</p>
+            <button type="button" id="signUpButton">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
