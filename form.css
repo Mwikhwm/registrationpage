@@ -5,9 +5,9 @@
     box-sizing:border-box;
 }
 body{
-    /*background-color: #b9bfd4;
-    background:linear-gradient(to right,#7a9cec,#cfcfde);*/
-    background-image: url(images/cyberpunk.jpg);
+    background-color: #b9bfd4;
+    background:linear-gradient(to right,#d5ddf1,#cfcfde);
+   /* background-image: url(images/cyberpunk.jpg);*/
     background-size:cover;
     background-position:center;
     height:100vh;
